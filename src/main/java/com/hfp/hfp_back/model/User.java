@@ -4,8 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.Date;
-import java.util.Set;
 
 @Getter
 @Setter
@@ -17,7 +15,6 @@ public class User {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_seq")
     private Long id;
 
-    @Column(name = "full_name")
     private String fullName;
 
     @ManyToOne()

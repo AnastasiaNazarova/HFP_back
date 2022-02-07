@@ -9,4 +9,5 @@ import javax.persistence.Table;
 @Repository
 @Table(name = "UserRus")
 public interface UserRepo extends CrudRepository<User, Long> {
+    void deleteUserById(Long id);
 }

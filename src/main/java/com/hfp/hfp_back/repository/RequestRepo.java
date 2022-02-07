@@ -9,4 +9,5 @@ import javax.persistence.Table;
 @Repository
 @Table(name = "Request")
 public interface RequestRepo extends CrudRepository<Request, Long> {
+    void deleteRequestById(Long id);
 }
